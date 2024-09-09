@@ -1,0 +1,39 @@
+body {
+    background-color: brown;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+span {
+    color: white;
+}
+
+table {
+    width: 40%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 0.6px black;
+}
+
+th {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+td {
+    background-color: black;
+    color: white;
+}
