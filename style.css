@@ -1,22 +1,37 @@
 body {
     padding: 0 2em;
-    background: linear-gradient(black, darkred);
+    background-color: #123123;
 }
 
 header {
-    background-color: white;
+    background-image: url(jp_topoFundo.jpg);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
 }
 
+.menu {
+    width: 500px;
+    height: 40px;
+    background-image: url(jp_menuFundo.jpg);
+    position: relative;
+    top: -80px;
+    left: 395px;
+    border: 2px solid #ffff;
+    border-radius: 20px 0px 20px 0px;
+    text-align: center
+}
+
 header img {
-    height: 120px;
+    height: 150px;
     padding: 15px; 
 }
 
 header a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
 }
 
 .one {
@@ -136,7 +151,7 @@ header a {
 }
 
 h1 {
-    background-color: rgb(0, 0, 0);
+    background-color: #550000;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 35px;
@@ -145,29 +160,51 @@ h1 {
     font-family: fantasy;
 }
 
-footer  {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+.tabela {
+    padding: 35px;
+    background-image: url(jp_fundoSelva.jpg);
+    margin: 0%;
     text-align: center;
+    background-attachment: fixed;
 }
 
-table {
-    width: 40%;
-    background-color: white;
-    margin: 5px;
+.tituloPremios {
+    position: relative;
+    top: -9px;
+    margin: 0 auto;
+    color: white;
 }
 
-td {
-    padding: 10px;
+.tabelaPremios {
+    position: relative;
+    top: -8px;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+}
+
+.thPremios {
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.trPremios {
     text-align: center;
-    border: 0.6px black;
+    background-color: #999999;
 }
 
-th {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255); 
+.trPremios2 {
+    background-color: #dddd00;
 }
 
-
-
-
+.rodape {
+    padding: 14px;
+    background-image: url(jp_topoFundo.jpg);
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+    color: white;
+    font-size: 16px;
+}
