@@ -119,6 +119,63 @@
                     </table>
                 </div>
             </section>
+
+            <section>
+            <h1>CRIADOR DE NOME DE DINOSSAURO</h1>
+            <script>
+            function Formulario() { //função que vai ser utilizada quando o botão enviar for utilizado
+                const silaba1 = document.forms ["cadastro"].silaba1.value;
+                if (silaba1 == "") {
+                    alert("Este campo é obrigatório!"); //emite um alerta caso o campo não esteja preenchido
+                    event.preventDefault();
+                    return;
+                }
+
+                const silaba2 = document.forms ["cadastro"].silaba2.value; //indica que está no formulário e recebe o seu valor
+                if (silaba2 == "") {
+                    alert("Este campo é obrigatório!");
+                    event.preventDefault();
+                    return;
+                }
+
+                const sobrenome1 = document.forms ["cadastro"].sobrenome1.value;
+                if (sobrenome1 == "") {
+                    alert("Este campo é obrigatório!");
+                    event.preventDefault();
+                    return;
+                }
+
+                const sobrenome2 = document.forms ["cadastro"].sobrenome2.value;
+                if (sobrenome2 == "") {
+                    alert("Este campo é obrigatório!");
+                    event.preventDefault(); //vai parar a execução caso o campo não esteja preenchido
+                    return; //sai da função se houver um campo vazio
+                }
+
+                const enviar = confirm("Você deseja prosseguir?");
+                    if (!enviar) {
+                    alert("Cancelado!");
+                    return;
+                }   
+                document.write ("Seu nome de dinossauro é: " + silaba1 + sobrenome2 + sobrenome1 + silaba2 + "sauro");
+            }
+            </script>
+            <form method="get" action="" name="cadastro">
+            Informe a primeira sílaba do seu nome:
+            <input type="text" name="silaba1" placeholder="Digite Aqui">
+            <br><br>
+            Informe a última sílaba do seu nome:
+            <input type="text" name="silaba2" placeholder="Digite Aqui">
+            <br><br>
+            Informe a primeira sílaba do seu sobrenome:
+            <input type="text" name="sobrenome1" placeholder="Digite Aqui">
+            <br><br>
+            Informe a última sílaba do seu sobrenome:
+            <input type="text" name="sobrenome2" placeholder="Digite Aqui">
+            <br><br>
+            <input type="submit" onclick="Formulario()" value="Criar meu nome de Dinossauro" id="enviar">
+            </form>
+            </section>
         </main>
 
         <footer>
