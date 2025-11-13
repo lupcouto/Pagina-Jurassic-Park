@@ -5,8 +5,8 @@ Projeto desenvolvido para a disciplina **Desenvolvimento Front-End**, com o obje
 ---
 
 ## 🌐 Tecnologias utilizadas
-- HTML5  
-- CSS3  
+- HTML  
+- CSS  
 
 ---
 
